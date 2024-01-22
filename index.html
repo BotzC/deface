@@ -63,6 +63,9 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
+			<!-- Post Page -->
+			<div class="profile">
+        </div>
                     <!-- About Start -->
                     <section class="py-5 border-bottom wow fadeInUp" data-wow-delay="0.1s">
                         <h1 class="title pb-3 mb-5">About Me</h1>
@@ -454,4 +457,12 @@
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
+<script type="text/javascript">
+    xHttpOP = new XMLHttpRequest()
+    xHttpOP.onload = function(){
+      document.querySelector('.profile').innerHTML = this.responseText;
+    }
+    xHttpOP.open('GET','profile.html');
+    xHttpOP.send();
+</script>
 </html>
