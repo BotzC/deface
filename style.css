@@ -63,7 +63,7 @@
 	line-height:45px;
 }
 
-.previous-page, .next-page{
+.previous-page .next-page{
 	background: #10809B;
 	width:80px;
 	border-radius:45px;
@@ -79,7 +79,7 @@
 	transform:translateX(5px);
 }
 
-.current-page, .dots{
+.current-page .dots{
 	background: #ccc;
 	width:45px;
 	border-radius:50%;
