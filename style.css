@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Sofia')
 
 *{
-	margin: 0;
+	margin:0;
 	padding: 0;
-	box-sizing: border-box;
-	font-family: "Sofia",sans-serif;
+	font-family:"Popins";
+}
+
+.container{
+	display:inline-block;
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
 }
 
 .card-content{
@@ -62,5 +69,43 @@
 .pagination li{
 	display:inline-block;
 	margin:5px;
-	box-shadow:0 5pz 25px rgb(1 1 1 / 10%);
+	box-shadow:0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.pagination li a{
+	color:#fff;
+	text-decoration:none;
+	font-size:1.2em;
+	line-height:45px;
+}
+
+.previous-page, .next-page{
+	background: #10809B;
+	width:80px;
+	border-radius:45px;
+	cursor:pointer;
+	transition:0.3s ease;
+}
+
+.previous-page:hover{
+	transform:translateX(-5px);
+}
+
+.next-page:hover{
+	transform:translateX(5px);
+}
+
+.current-page, .dots{
+	background: #ccc;
+	width:45px;
+	border-radius:50%;
+	cursor:pointer;
+}
+
+.active{
+	background:#10809B;
+}
+
+.disable{
+	background:#ccc;
 }
